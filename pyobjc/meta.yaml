@@ -1,0 +1,136 @@
+package:
+  name: pyobjc
+  version: "3.0.4"
+
+source:
+  fn: pyobjc-3.0.4.tar.gz
+  url: https://pypi.python.org/packages/source/p/pyobjc/pyobjc-3.0.4.tar.gz
+  md5: 7b1810f68ee783df943b5be51b694f35
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+# build:
+  # noarch_python: True
+  # preserve_egg_dir: True
+  # entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - pyobjc = pyobjc:main
+    #
+    # Would create an entry point called pyobjc that calls pyobjc.main()
+
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - py2app >=0.8
+    - pyobjc-core ==3.0.4
+    - pyobjc-framework-addressbook ==3.0.4
+    - pyobjc-framework-applescriptkit ==3.0.4
+    - pyobjc-framework-automator ==3.0.4
+    - pyobjc-framework-cfnetwork ==3.0.4
+    - pyobjc-framework-cocoa ==3.0.4
+    - pyobjc-framework-coredata ==3.0.4
+    - pyobjc-framework-coretext ==3.0.4
+    - pyobjc-framework-diskarbitration ==3.0.4
+    - pyobjc-framework-exceptionhandling ==3.0.4
+    - pyobjc-framework-installerplugins ==3.0.4
+    - pyobjc-framework-latentsemanticmapping ==3.0.4
+    - pyobjc-framework-launchservices ==3.0.4
+    - pyobjc-framework-preferencepanes ==3.0.4
+    - pyobjc-framework-quartz ==3.0.4
+    - pyobjc-framework-screensaver ==3.0.4
+    - pyobjc-framework-searchkit ==3.0.4
+    - pyobjc-framework-syncservices ==3.0.4
+    - pyobjc-framework-systemconfiguration ==3.0.4
+    - pyobjc-framework-webkit ==3.0.4
+    - pyobjc-framework-fsevents ==3.0.4
+    - pyobjc-framework-calendarstore ==3.0.4
+    - pyobjc-framework-collaboration ==3.0.4
+    - pyobjc-framework-dictionaryservices ==3.0.4
+    - pyobjc-framework-inputmethodkit ==3.0.4
+    - pyobjc-framework-instantmessage ==3.0.4
+    - pyobjc-framework-pubsub ==3.0.4
+    - pyobjc-framework-qtkit ==3.0.4
+    - pyobjc-framework-scriptingbridge ==3.0.4
+    - pyobjc-framework-applescriptobjc ==3.0.4
+    - pyobjc-framework-corelocation ==3.0.4
+    - pyobjc-framework-servicemanagement ==3.0.4
+    - pyobjc-framework-corewlan ==3.0.4
+    - pyobjc-framework-storekit ==3.0.4
+    - pyobjc-framework-accounts ==3.0.4
+    - pyobjc-framework-eventkit ==3.0.4
+    - pyobjc-framework-social ==3.0.4
+
+  run:
+    - python
+    - py2app >=0.8
+    - pyobjc-core ==3.0.4
+    - pyobjc-framework-addressbook ==3.0.4
+    - pyobjc-framework-applescriptkit ==3.0.4
+    - pyobjc-framework-automator ==3.0.4
+    - pyobjc-framework-cfnetwork ==3.0.4
+    - pyobjc-framework-cocoa ==3.0.4
+    - pyobjc-framework-coredata ==3.0.4
+    - pyobjc-framework-coretext ==3.0.4
+    - pyobjc-framework-diskarbitration ==3.0.4
+    - pyobjc-framework-exceptionhandling ==3.0.4
+    - pyobjc-framework-installerplugins ==3.0.4
+    - pyobjc-framework-latentsemanticmapping ==3.0.4
+    - pyobjc-framework-launchservices ==3.0.4
+    - pyobjc-framework-preferencepanes ==3.0.4
+    - pyobjc-framework-quartz ==3.0.4
+    - pyobjc-framework-screensaver ==3.0.4
+    - pyobjc-framework-searchkit ==3.0.4
+    - pyobjc-framework-syncservices ==3.0.4
+    - pyobjc-framework-systemconfiguration ==3.0.4
+    - pyobjc-framework-webkit ==3.0.4
+    - pyobjc-framework-fsevents ==3.0.4
+    - pyobjc-framework-calendarstore ==3.0.4
+    - pyobjc-framework-collaboration ==3.0.4
+    - pyobjc-framework-dictionaryservices ==3.0.4
+    - pyobjc-framework-inputmethodkit ==3.0.4
+    - pyobjc-framework-instantmessage ==3.0.4
+    - pyobjc-framework-pubsub ==3.0.4
+    - pyobjc-framework-qtkit ==3.0.4
+    - pyobjc-framework-scriptingbridge ==3.0.4
+    - pyobjc-framework-applescriptobjc ==3.0.4
+    - pyobjc-framework-corelocation ==3.0.4
+    - pyobjc-framework-servicemanagement ==3.0.4
+    - pyobjc-framework-corewlan ==3.0.4
+    - pyobjc-framework-storekit ==3.0.4
+    - pyobjc-framework-accounts ==3.0.4
+    - pyobjc-framework-eventkit ==3.0.4
+    - pyobjc-framework-social ==3.0.4
+
+# test:
+  # Python imports
+  # imports:
+
+  # commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+
+  # You can also put a file called run_test.py in the recipe that will be run
+  # at test time.
+
+  # requires:
+    # Put any additional test requirements here.  For example
+    # - nose
+
+about:
+  home: http://pyobjc.sourceforge.net/
+  license: MIT License
+  summary: 'Python<->ObjC Interoperability Module'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

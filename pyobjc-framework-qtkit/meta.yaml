@@ -1,0 +1,67 @@
+package:
+  name: pyobjc-framework-qtkit
+  version: "3.0.4"
+
+source:
+  fn: pyobjc-framework-QTKit-3.0.4.tar.gz
+  url: https://pypi.python.org/packages/source/p/pyobjc-framework-QTKit/pyobjc-framework-QTKit-3.0.4.tar.gz
+  md5: 26daee58cf4ddf8b197a3483846a3ddd
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+# build:
+  # noarch_python: True
+  # preserve_egg_dir: True
+  # entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - pyobjc-framework-qtkit = pyobjc-framework-qtkit:main
+    #
+    # Would create an entry point called pyobjc-framework-qtkit that calls pyobjc-framework-qtkit.main()
+
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pyobjc-core >=3.0.4
+    - pyobjc-framework-cocoa >=3.0.4
+    - pyobjc-framework-quartz >=3.0.4
+
+  run:
+    - python
+    - pyobjc-core >=3.0.4
+    - pyobjc-framework-cocoa >=3.0.4
+    - pyobjc-framework-quartz >=3.0.4
+
+test:
+  # Python imports
+  imports:
+    - QTKit
+
+  # commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+
+  # You can also put a file called run_test.py in the recipe that will be run
+  # at test time.
+
+  # requires:
+    # Put any additional test requirements here.  For example
+    # - nose
+
+about:
+  home: http://pyobjc.sourceforge.net
+  license: MIT License
+  summary: 'Wrappers for the framework QTKit on Mac OS X'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
