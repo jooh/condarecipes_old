@@ -1,0 +1,58 @@
+package:
+  name: pycortex
+  version: devel
+
+source:
+  git_url: https://github.com/gallantlab/pycortex
+
+build:
+  preserve_egg_dir: True
+
+requirements:
+  build:
+    - python
+    - cython
+    - numpy
+    - scipy
+    - matplotlib
+    - lxml
+    - shapely
+    - html5lib
+    - h5py
+    - mayavi
+    - nibabel
+    - tornado
+    - pil
+    - numexpr
+
+  run:
+    - python
+    - cython
+    - numpy
+    - scipy
+    - matplotlib
+    - lxml
+    - shapely
+    - html5lib
+    - h5py
+    - mayavi
+    - nibabel
+    - tornado
+    - pil
+    - numexpr
+
+#test:
+  # Python imports
+  # VERY IMPORTANT NOT TO RUN THIS 'test' because it installs a config file
+  # outside the build environment which then has hard-coded file paths to
+  # the temp build files rather than the final location
+  #imports:
+    #- cortex
+
+about:
+  home: https://github.com/gallantlab/pycortex
+  summary: "Pycortex is a python-based toolkit for surface visualization in fMRI data http://pycortex.org"
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
