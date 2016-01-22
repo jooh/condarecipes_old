@@ -1,0 +1,69 @@
+package:
+  name: expcontrol
+  version: "0.1.1"
+
+source:
+  fn: expcontrol-0.1.1.tar.gz
+  url: https://pypi.python.org/packages/source/e/expcontrol/expcontrol-0.1.1.tar.gz
+  md5: 62891f516f219d88792cc2a2da6f6d44
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+# build:
+  # noarch_python: True
+  # preserve_egg_dir: True
+  # entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - expcontrol = expcontrol:main
+    #
+    # Would create an entry point called expcontrol that calls expcontrol.main()
+
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy
+    - pandas
+    - psychopy
+    - sqlalchemy
+
+  run:
+    - python
+    - numpy
+    - pandas
+    - psychopy
+    - sqlalchemy
+
+test:
+  # Python imports
+  imports:
+    - expcontrol
+
+  # commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+
+  # You can also put a file called run_test.py in the recipe that will be run
+  # at test time.
+
+  # requires:
+    # Put any additional test requirements here.  For example
+    # - nose
+
+about:
+  home: http://github.com/jooh/expcontrol
+  license: ISC
+  summary: 'Easy control of typical experiments in psychology and neuroscience, including stimulus presentation, timing, response collection and logging.'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
