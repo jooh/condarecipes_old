@@ -1,11 +1,11 @@
 package:
   name: expcontrol
-  version: "0.1.1"
+  version: "0.1.2"
 
 source:
-  fn: expcontrol-0.1.1.tar.gz
-  url: https://pypi.python.org/packages/source/e/expcontrol/expcontrol-0.1.1.tar.gz
-  md5: 62891f516f219d88792cc2a2da6f6d44
+  fn: expcontrol-0.1.2.tar.gz
+  url: https://pypi.python.org/packages/source/e/expcontrol/expcontrol-0.1.2.tar.gz
+  md5: a28b7fb16f91e32d99e8d8ca2c08c320
 #  patches:
    # List any patch files here
    # - fix.patch
